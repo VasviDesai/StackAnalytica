@@ -3,9 +3,9 @@ A web tool that provides for a problem tag (eg java, javascript) an integrated v
 CSC 510-Project
 
 Team: <br/>
-1. Vasvi C. Desai - vcdesai <br/>
-2. Prakshatkumar Shah - pmshah <br/>
-3. Harsh J. Patel - hpatel8 <br/>
+1. Vasvi C. Desai <br/>
+2. Prakshatkumar Shah <br/>
+3. Harsh J. Patel <br/>
 
 ## Milestone 1 (DESIGN.md)
 https://github.ncsu.edu/pmshah/csc510-project/blob/master/DESIGN.md
