@@ -8,19 +8,19 @@ Team: <br/>
 3. Harsh J. Patel <br/>
 
 ## Milestone 1 (DESIGN.md)
-https://github.ncsu.edu/pmshah/csc510-project/blob/master/DESIGN.md
+https://github.com/VasviDesai/StackAnalytica/blob/master/DESIGN.md
 
 ## Milestone 2
-https://github.ncsu.edu/pmshah/csc510-project/blob/master/MILESTONE2.md
+https://github.com/VasviDesai/StackAnalytica/blob/master/MILESTONE2.md
 
 ## Milestone 3
-https://github.ncsu.edu/pmshah/csc510-project/blob/master/MILESTONE3.md
+https://github.com/VasviDesai/StackAnalytica/blob/master/MILESTONE3.md
 
 ## Milestone 4
-https://github.ncsu.edu/pmshah/csc510-project/blob/master/MILESTONE4.md
+https://github.com/VasviDesai/StackAnalytica/blob/master/MILESTONE4.md
 
 ## Milestone 5 (REPORT.md)
-https://github.ncsu.edu/pmshah/csc510-project/blob/master/REPORT.md
+https://github.com/VasviDesai/StackAnalytica/blob/master/REPORT.md
 
 
 # Deployment
