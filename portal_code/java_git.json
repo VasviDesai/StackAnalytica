@@ -1,0 +1,32 @@
+﻿[  
+   {  
+      "author":"doocs",
+      "name":"advanced-java",
+      "description":"😮 互联网 Java 工程师进阶知识完全扫盲",
+      "url":"https://github.com/doocs/advanced-java"
+   },
+   {  
+      "author":"networknt",
+      "name":"light-4j",
+      "description":"A fast, lightweight and more productive microservices framework",
+      "url":"https://github.com/networknt/light-4j"
+   },
+   {  
+      "author":"dyc87112",
+      "name":"SpringBoot-Learning",
+      "description":"Spring Boot基础教程，Spring Boot 2.x版本连载中！！！",
+      "url":"https://github.com/dyc87112/SpringBoot-Learning"
+   },
+   {  
+      "author":"spring-projects",
+      "name":"spring-boot",
+      "description":"Spring Boot",
+      "url":"https://github.com/spring-projects/spring-boot"
+   },
+   {  
+      "author":"eugenp",
+      "name":"tutorials",
+      "description":"The \"REST With Spring\" Course:",
+      "url":"https://github.com/eugenp/tutorials"
+   }
+]

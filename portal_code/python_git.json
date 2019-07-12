@@ -1,0 +1,32 @@
+﻿[  
+   {  
+      "author":"instantbox",
+      "name":"instantbox",
+      "description":"Get a clean, ready-to-go Linux box in seconds.",
+      "url":"https://github.com/instantbox/instantbox"
+   },
+   {  
+      "author":"Microsoft",
+      "name":"pyright",
+      "description":"Static type checker for Python",
+      "url":"https://github.com/Microsoft/pyright"
+   },
+   {  
+      "author":"toddmotto",
+      "name":"public-apis",
+      "description":"A collective list of free APIs for use in software and web development.",
+      "url":"https://github.com/toddmotto/public-apis"
+   },
+   {  
+      "author":"CriseLYJ",
+      "name":"awesome-python-login-model",
+      "description":"😮python模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助❤️，如果喜欢记得给个star哦🌟",
+      "url":"https://github.com/CriseLYJ/awesome-python-login-model"
+   },
+   {  
+      "author":"minimaxir",
+      "name":"automl-gs",
+      "description":"Provide an input CSV and a target field to predict, generate a model + code to run it.",
+      "url":"https://github.com/minimaxir/automl-gs"
+   }
+]

@@ -1,0 +1,49 @@
+{  
+   "Top_Users":[  
+      {  
+         "Profile_ID":1602555,
+         "display_name":"Karol Dowbecki",
+         "link":"https://stackoverflow.com/users/1602555/karol-dowbecki",
+         "Score":-0.005026971360060806,
+         "Response_Time":-0.4584833659414983,
+         "Popularity":0.033000503695742534,
+         "last_activity":286
+      },
+      {  
+         "Profile_ID":1392277,
+         "display_name":"LppEdd",
+         "link":"https://stackoverflow.com/users/1392277/lppedd",
+         "Score":-1.0221216247983707,
+         "Response_Time":-1.047016744433753,
+         "Popularity":0.9130139355822102,
+         "last_activity":134
+      },
+      {  
+         "Profile_ID":1221571,
+         "display_name":"Eran",
+         "link":"https://stackoverflow.com/users/1221571/eran",
+         "Score":11.61595950935559,
+         "Response_Time":0.31259268473868285,
+         "Popularity":1.573024009497061,
+         "last_activity":166
+      },
+      {  
+         "Profile_ID":7606764,
+         "display_name":"Andronicus",
+         "link":"https://stackoverflow.com/users/7606764/andronicus",
+         "Score":-6.608667752095965,
+         "Response_Time":-1.1410415207140918,
+         "Popularity":-0.6270095702191082,
+         "last_activity":237
+      },
+      {  
+         "Profile_ID":5772882,
+         "display_name":"Ole V.V.",
+         "link":"https://stackoverflow.com/users/5772882/ole-v-v",
+         "Score":-8.89504657129476,
+         "Response_Time":-0.38834005564740215,
+         "Popularity":-1.067016286162342,
+         "last_activity":7
+      }
+   ]
+}

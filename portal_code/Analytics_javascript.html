@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    td.SO {
+      font-family: 'Lato', sans-serif; 
+      color: #138D75; 
+      font-size: 17px;}
+
+    div.GH {
+      margin-left: 25px; 
+      margin-right: 25px; 
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+  <!--Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--For Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <script>
+  $(document).ready(function(){
+    var pathToSubscribe = "EmailSubscription.html?index=" + index
+    document.getElementById("email_sub").setAttribute("href",pathToSubscribe);
+
+    $.getJSON("javascript_users.json", function(data){
+      console.log(data)
+      var user_data = '';
+      for ( var k=0;k<5;k++)
+      {
+        console.log(data)
+        user_data += '<tr class="list-group-item list-group-item-action">';
+        user_data += '<td class = "SO">';
+        user_data += 'Profile Name: <b>' + data.Top_Users[k].display_name+ '</b>';
+        user_data += '</br>';
+        user_data += 'Popularity Score: <b>' + Math.abs(data.Top_Users[k].Popularity)+ '</b>';
+        user_data += '</br>';
+        user_data += 'Activity Score: <b>' + data.Top_Users[k].last_activity+ '</b>';
+        user_data += '</br>';
+        user_data += '<a href = "' +data.Top_Users[k].link+ '" target = "_blank">Visit Profile Link</a>';
+        user_data += '</td>';
+        user_data += '</tr>';
+      }
+      $('#SOData').append(user_data);
+    });  
+  });
+  </script>
+
+  <script>
+    var url = window.location.href;
+    var index = null;
+    if(url.lastIndexOf('?') != -1) {
+        index = url.split('?')[1];
+        index= index.split('=')[1];
+    }
+    console.log(index);
+    function docWrite(variable) {
+    document.write(variable);
+    }
+    //   var textToSave = index;
+    // var hiddenElement = document.createElement('a');
+    // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    // hiddenElement.target = '_blank';
+    // hiddenElement.download = index + '.txt';
+    // hiddenElement.click()
+    //***********************************************************************//
+  $(document).ready(function(){
+    $.getJSON("javascript_git.json", function(data){
+      var repo_data = '';
+      $.each(data, function(key, value){
+        repo_data += '<div class="card w-auto h-auto" class = "GH" align = "center" style = "margin-bottom: 25px">';
+        repo_data += '<tr>';
+        repo_data += '<td> <div class="card-header">' +value.author+ '</div>';
+        repo_data += '<div class="card-body">' 
+        repo_data += '<h5 class="card-title">' +value.name+ '</h5>';
+        repo_data += '<p class="card-text">' +value.description+ '</p>';
+        repo_data += '<a href = "' +value.url+ '" target = "_blank" class="btn btn-outline-primary">Repository Link</a>';
+        repo_data += '</div>';
+        repo_data += '</td>';
+        repo_data += '</tr>';
+        repo_data += '</div>';
+      });
+      $('#GHData').append(repo_data);
+    });  
+  });
+  </script>
+  <script>
+
+  </script>
+</head>
+
+<body class="bodystyle">
+
+<h1 class="h1style" style="padding: 5px;">Analytics Page</h1>
+
+<div style="width: 100%; height: 100%; padding-left: 50px; padding-right: 50px; margin: 0 auto">
+  <table style="width:100%; table-layout: fixed">
+    <tr>
+      <td height="500">
+        <p>
+          <h3 style="font-family: Trebuchet MS; font-weight: bold; color: #0288D1; padding-left: 5px" align="center">
+          StackOverflow Users
+          <small class="text-muted">Top 5 in <script>document.write(index);</script></small>
+        </h3> 
+        <br>
+        <div class="list-group" style="padding-left: 20px; padding-right: 20px">   
+          <table id="SOData" style="width: 100%">
+
+          </table>
+        </div>
+        </p>
+      </td>
+
+      <td>
+        <div align="center" style="padding-top: 16px">
+          <h3 style="font-family: Trebuchet MS; font-weight: bold; color: #0288D1; padding-left: 5px" align="center">
+          Normalized score of a User
+        </h3>
+        <div class='tableauPlaceholder' id='viz1553834144647' style='position: relative;height: 100% !important;margin-top: 5%'>
+          <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;js&#47;js_users1&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='js_users1&#47;Sheet1' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;js&#47;js_users1&#47;Sheet1&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='filter' value='publish=yes' />
+          </object>
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>
+          <h3 style="font-family: Trebuchet MS; font-weight: bold; color: #0288D1; padding-left: 5px" align="center">
+          GitHub Repositories
+          <small class="text-muted">Trending in <script>document.write(index);</script></small>
+        </h3> 
+        </br>
+        <div style="padding-left: 20px; padding-right: 20px" align="center">   
+          <table id="GHData" style="width: 100%">
+
+          </table>
+        </div>
+        </p>
+      </td>
+
+      <td>
+        <div align="center" style="padding-top: 16px">
+          <h3 style="font-family: Trebuchet MS; font-weight: bold; color: #0288D1; padding-left: 5px">
+          Popularity and Response Time vs Users
+        </h3>             
+        <div class='tableauPlaceholder' id='viz1553834128898' style='position: relative;height: 100% !important;margin-top: 5%'>
+          <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;js&#47;js_users2&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='js_users2&#47;Sheet2' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;js&#47;js_users2&#47;Sheet2&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='filter' value='publish=yes' />
+          </object>
+      </div>
+        </div>
+      </td>
+    </tr>
+</table>
+</div>
+
+<br>
+<br>
+<div align="center" style="margin-bottom: 25px">
+<a href="" target="_blank" id="email_sub"><button type="button" class="buttonstyle btn btn-success">Subscribe</button></a>
+</div>
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1553834144647');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1553834128898');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+</body>
+</html>

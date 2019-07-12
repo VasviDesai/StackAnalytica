@@ -1,0 +1,32 @@
+﻿[  
+   {  
+      "author":"vuejs",
+      "name":"vue",
+      "description":"🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "url":"https://github.com/vuejs/vue"
+   },
+   {  
+      "author":"alexfoxy",
+      "name":"laxxx",
+      "description":"Simple & light weight (3kb minified & zipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!",
+      "url":"https://github.com/alexfoxy/laxxx"
+   },
+   {  
+      "author":"mozilla",
+      "name":"send",
+      "description":"Simple, private file sharing from the makers of Firefox",
+      "url":"https://github.com/mozilla/send"
+   },
+   {  
+      "author":"LisaDziuba",
+      "name":"Awesome-Design-Tools",
+      "description":"The best design tools for everything 👉",
+      "url":"https://github.com/LisaDziuba/Awesome-Design-Tools"
+   },
+   {  
+      "author":"facebook",
+      "name":"react",
+      "description":"A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "url":"https://github.com/facebook/react"
+   }
+]
