@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
+  <title>StackAnalytica &rsaquo; Homepage</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ionicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome-all.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deeppurple.css') }}">
+
+
+  <!-- <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+
+  <link rel="stylesheet" href="../dist/css/demo.css">
+  <link rel="stylesheet" href="../dist/css/style.css"> -->
+
+
+  <!--For search box -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Bootstrap CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--For Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!--For search box -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!--For Filtering -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function()
+  {
+      $("#myInput").on("keyup", function() 
+      {
+        var value = $(this).val().toLowerCase();
+        $("#myDIV *").filter(function() 
+        {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+  });
+  </script>
+</head>
+<body>
+  <div id="app">
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+            <div class="login-brand">
+              Stack Analytica
+            </div>
+                <div class="card-body">
+                <div class = "search-box" style="">
+                  <input class = "search-txt" type="text" name="" placeholder="Type to search" id="myInput">
+                    <a class = "search-btn" href="#">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                
+                <div class = "equidist" id="myDIV" style="padding-top: 50px; margin: 0 auto; margin-top: 100px; width: auto; height: auto;">
+                  <a href="/java" ><button type="button" class="btn btn-primary">Java</button></a>
+                  <a href="/javascript" ><button type="button" class="btn btn-primary">JavaScript</button></a>
+                  <a href="/python" ><button type="button" class="btn btn-primary">Python</button></a>
+                </div>
+
+                <div class = "equidist" id="myDIV" style="margin: 0 auto; margin-top: 10px;">
+                  <a href="/csharp" ><button type="button" class="btn btn-primary">C#</button></a>
+                  <a href="/cplus" ><button type="button" class="btn btn-primary">C++</button></a>
+                  <a href="/golang" ><button type="button" class="btn btn-primary">Go</button></a>
+                  <a href="/r" ><button type="button" class="btn btn-primary">R</button></a>
+                </div>
+
+                <div class = "equidist" id="myDIV" style="margin: 0 auto; margin-top: 10px;">
+                  <a href="/swift" ><button type="button" class="btn btn-primary">Swift</button></a>
+                  <a href="/ruby" target="_blank"><button type="button" class="btn btn-primary">Ruby</button></a>
+                  <a href="/php" target="_blank"><button type="button" class="btn btn-primary">PHP</button></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- <script src="../dist/modules/jquery.min.js"></script>
+  <script src="../dist/modules/popper.js"></script>
+  <script src="../dist/modules/tooltip.js"></script>
+  <script src="../dist/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../dist/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../dist/modules/moment.min.js"></script>
+  <script src="../dist/modules/scroll-up-bar/dist/scroll-up-bar.min.js"></script>
+  <script src="../dist/js/sa-functions.js"></script>
+  
+  <script src="../dist/js/scripts.js"></script>
+  <script src="../dist/js/custom.js"></script>
+  <script src="../dist/js/demo.js"></script> -->
+
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='popper.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='tooltip.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery.nicescroll.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='scroll-up-bar.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='sa-functions.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='custom.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='demo.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
+  <title>StackAnalytica &rsaquo; Analytics</title>
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ionicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome-all.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='summernote-lite.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='flag-icon.min.css') }}">
+
+  <style>
+      td.SO {
+      font-family: 'Lato', sans-serif;
+      color: #138D75;
+      font-size: 17px;}
+      div.GH {
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-bottom: 10px;
+      }
+  </style>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!--For Font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <script>
+        //Data from Python Scripts before HTML DOM gets loaded
+         var data_xyz = {{ custom_data|tojson }};
+
+         $(document).ready(function(){
+          chart_users = [];
+          chart_resptime=[];
+          chart_score = [];
+           var repo_data = '';
+
+           $.each($.parseJSON(data_xyz), function(key, value){
+             repo_data += '<div class="card w-auto h-auto" class = "GH" align = "center" style = "margin-bottom: 25px">';
+             repo_data += '<tr>';
+             repo_data += '<td> <div class="card-header"> <b>Author Name: ' +value.author+ ' </b></div>';
+             repo_data += '<div class="card-body">'
+             repo_data += '<h5 class="card-title">' +value.name+ '</h5>';
+             repo_data += '<p class="card-text">' +value.description+ '</p>';
+             repo_data += '<a href = "' +value.url+ '" target = "_blank" class="btn btn-outline-primary">Repository Link</a>';
+             repo_data += '</div>';
+             repo_data += '</td>';
+             repo_data += '</tr>';
+             repo_data += '</div>';
+           });
+           $('#GHData').append(repo_data);
+            var stack_data = {{ stack_data|tojson }};
+            stack_data = JSON.parse(stack_data);
+            console.log(stack_data.Top_Users)
+            var user_data = '';
+           for ( var k=0;k<5;k++)
+           {
+
+              user_data += '<tr>';
+              user_data += '<td>';
+              user_data += '<ul class="list-unstyled list-unstyled-border">';
+              user_data += '<li class="media">';
+              user_data += '<div class="media-body">';
+              user_data += '<div class="media-body">';
+              user_data += '<div class="media-title">' + stack_data.Top_Users[k].display_name+ '</div>';
+              user_data += '</br>';
+              user_data += '<small>';
+              user_data += 'Cumulative Score: <b>' +  Math.abs(stack_data.Top_Users[k].Score).toPrecision(4)+ '</b>';
+              user_data += '</br>';
+              user_data += 'Profile Popularity: <b>' + Math.abs(stack_data.Top_Users[k].Popularity).toPrecision(4)+ '</b>';
+              user_data += '</br>';
+              user_data += 'Last Activity Score: <b>' + stack_data.Top_Users[k].last_activity+ '</b>';
+              user_data += '</br>';
+              user_data += '<a href = "' +stack_data.Top_Users[k].link+ '" target = "_blank">Visit Profile Link</a>';
+              user_data += '</small>';
+              user_data += '</div>';
+              user_data += '</li>';
+              user_data += '</ul>';
+              user_data += '</td>';
+              user_data += '</tr>';
+           }
+           $('#SOData').append(user_data);
+
+           for(var z=0;z<5;z++)
+           {
+            chart_users.push(stack_data.Top_Users[z].display_name)
+            chart_resptime.push(Math.abs(stack_data.Top_Users[z].Response_Time))
+            chart_score.push(Math.abs(stack_data.Top_Users[z].Score))
+           }
+           console.log(chart_users)
+           console.log(chart_resptime)
+
+           var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: chart_users,
+      datasets: [{
+        label: 'Statistics',
+        data: chart_resptime,
+        borderWidth: 2,
+        backgroundColor: 'rgb(87,75,144)',
+        borderColor: 'rgb(87,75,144)',
+        borderWidth: 2.5,
+        pointBackgroundColor: '#ffffff',
+        pointRadius: 4
+      }]
+    },
+    options: {
+
+      legend: {
+        display: true
+      },
+      scales: {
+        yAxes: [{
+          scaleLabel: {
+        display: true,
+        labelString: 'Response Time (hours)'
+      },
+          ticks: {
+            beginAtZero: true,
+            stepSize: 50,
+            autoSkip: false
+          }
+        }],
+        xAxes: [{
+          scaleLabel: {
+        display: true,
+        labelString: 'Users'
+      },
+          ticks: {
+            autoSkip:false,
+            minRotation: 45
+          },
+          gridLines: {
+            display: false
+          }
+        }]
+      },
+    }
+  });
+
+//--------------------------------------------------------------------
+
+var ctx = document.getElementById("myChart2").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: chart_users,
+        datasets: [{
+          label: 'Score Statistics',
+          data: chart_score,
+          borderWidth: 2,
+          backgroundColor: 'rgb(87,75,144)',
+          borderColor: 'rgb(87,75,144)',
+          borderWidth: 2.5,
+          pointBackgroundColor: '#ffffff',
+          pointRadius: 4
+        }]
+      },
+      options: {
+
+        legend: {
+          display: true
+        },
+        scales: {
+          yAxes: [{
+            scaleLabel: {
+        display: true,
+        labelString: 'Cummulative Score'
+      },
+            ticks: {
+              beginAtZero: true,
+              stepSize: 5
+            }
+          }],
+          xAxes: [{
+            scaleLabel: {
+        display: true,
+        labelString: 'Users'
+      },
+            ticks: {
+              display: true,
+              autoSkip:false,
+              minRotation: 45
+            },
+            gridLines: {
+              display: false
+            }
+          }]
+        },
+      }
+    });
+});
+
+</script>
+</head>
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="ion ion-navicon-round"></i></a></li>
+          </ul>
+        </form>
+      </nav>
+
+      <div class="main-sidebar">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="/">Stack Analytica</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Analytics</li>
+            <li class="active">
+              <a href="javascript:window.location.reload(true)"><i class="ion ion-speedometer"></i><span>Refresh</span></a>
+            </li>
+
+            <li class="menu-header">Components</li>
+            <li>
+              <a href="/" target="_blank"><i class="ion ion-clipboard"></i><span>HomePage</span></a>
+            </li>
+            <li>
+              <a href="/emailsubscribe" id="email_sub" target="_blank"><i class="ion ion-stats-bars"></i><span>Email Subscription</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div class="main-content">
+        <section class="section">
+          <h1 class="section-header">
+            <div>Analytics</div>
+          </h1>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Average Response Time of a User</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="myChart" height="158"></canvas>
+                </div>
+              </div>
+                <div class="card">
+                <div class="card-header">
+                  <h4>Cummulative score vs Users</h4>
+                </div>
+                  <div class="card-body">
+                    <canvas id="myChart2" height="180"></canvas>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>StackOverflow Users</h4>
+                </div>
+                <div class="card-body">
+                  <table id="SOData" style="width: 100%">
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Cummulative score vs Users - Monthly Analysis Report</h4>
+                </div>
+                 <div class='tableauPlaceholder' id='viz1555541660105' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ja&#47;java_users&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='java_users&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ja&#47;java_users&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1555541660105');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                 </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Trending GitHub Repositories</h4>
+                </div>
+                <div>
+                  <table id="GHData" style="width: 100%">
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-right"></div>
+      </footer>
+    </div>
+  </div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='popper.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='tooltip.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.nicescroll.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='scroll-up-bar.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='sa-functions.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='custom.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='demo.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='chart.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='summernote-lite.js') }}"></script>
+
+
+
+  <script>
+
+  </script>
+  <script>
+    
+  </script>
+
+</body>
+</html>
