@@ -1,0 +1,98 @@
+{  
+   "Java":[  
+      {  
+         "Repository_Name":"Hotel Management System",
+         "Description":"Software System design for hotel management using Java",
+         "Author":"Garvin Shilton",
+         "Repository_Link":"http://domainmarket.com/ipsum/primis/in/faucibus/orci/luctus.xml?suspendisse=nulla&accumsan=integer&tortor=pede&quis=justo&turpis=lacinia&sed=eget&ante=tincidunt&vivamus=eget&tortor=tempus&duis=vel&mattis=pede&egestas=morbi&metus=porttitor&aenean=lorem&fermentum=id&donec=ligula&ut=suspendisse&mauris=ornare&eget=consequat&massa=lectus&tempor=in&convallis=est&nulla=risus&neque=auctor&libero=sed&convallis=tristique&eget=in&eleifend=tempus&luctus=sit&ultricies=amet&eu=sem&nibh=fusce&quisque=consequat"
+      },
+      {  
+         "Repository_Name":"RESTAPIInteraction",
+         "Description":"API Interaction using Java",
+         "Author":"Cosetta Berger",
+         "Repository_Link":"http://yellowpages.com/eros/viverra/eget/congue/eget/semper.aspx?orci=mi&mauris=nulla&lacinia=ac&sapien=enim&quis=in&libero=tempor&nullam=turpis&sit=nec&amet=euismod&turpis=scelerisque&elementum=quam&ligula=turpis&vehicula=adipiscing&consequat=lorem&morbi=vitae&a=mattis&ipsum=nibh&integer=ligula&a=nec&nibh=sem&in=duis&quis=aliquam&justo=convallis&maecenas=nunc&rhoncus=proin&aliquam=at&lacus=turpis&morbi=a&quis=pede&tortor=posuere&id=nonummy&nulla=integer&ultrices=non&aliquet=velit"
+      },
+      {  
+         "Repository_Name":"Ledger",
+         "Description":"Ledger Management System for Accounting",
+         "Author":"Ernaline Pook",
+         "Repository_Link":"https://ask.com/porta/volutpat/erat/quisque/erat/eros.jsp?quis=elementum&odio=nullam&consequat=varius&varius=nulla&integer=facilisi&ac=cras&leo=non&pellentesque=velit&ultrices=nec&mattis=nisi&odio=vulputate&donec=nonummy&vitae=maecenas&nisi=tincidunt&nam=lacus&ultrices=at&libero=velit&non=vivamus&mattis=vel&pulvinar=nulla&nulla=eget&pede=eros&ullamcorper=elementum&augue=pellentesque&a=quisque&suscipit=porta&nulla=volutpat&elit=erat&ac=quisque&nulla=erat&sed=eros&vel=viverra&enim=eget&sit=congue&amet=eget&nunc=semper&viverra=rutrum&dapibus=nulla&nulla=nunc&suscipit=purus&ligula=phasellus&in=in&lacus=felis&curabitur=donec&at=semper&ipsum=sapien&ac=a&tellus=libero&semper=nam&interdum=dui&mauris=proin&ullamcorper=leo&purus=odio&sit=porttitor&amet=id"
+      },
+      {  
+         "Repository_Name":"opentracing-contrib",
+         "Description":"Distributed tracing for Spring Boot, Cloud and other",
+         "Author":"Cammy Sizeland",
+         "Repository_Link":"https://constantcontact.com/quis/augue/luctus/tincidunt/nulla.js?hac=lorem&habitasse=vitae&platea=mattis&dictumst=nibh&aliquam=ligula&augue=nec&quam=sem&sollicitudin=duis&vitae=aliquam&consectetuer=convallis&eget=nunc&rutrum=proin&at=at&lorem=turpis&integer=a&tincidunt=pede&ante=posuere&vel=nonummy&ipsum=integer&praesent=non&blandit=velit&lacinia=donec&erat=diam&vestibulum=neque&sed=vestibulum&magna=eget&at=vulputate&nunc=ut&commodo=ultrices&placerat=vel&praesent=augue&blandit=vestibulum&nam=ante&nulla=ipsum&integer=primis&pede=in&justo=faucibus&lacinia=orci&eget=luctus&tincidunt=et&eget=ultrices&tempus=posuere&vel=cubilia&pede=curae&morbi=donec&porttitor=pharetra&lorem=magna&id=vestibulum&ligula=aliquet&suspendisse=ultrices&ornare=erat&consequat=tortor&lectus=sollicitudin&in=mi&est=sit&risus=amet&auctor=lobortis&sed=sapien&tristique=sapien&in=non&tempus=mi&sit=integer&amet=ac&sem=neque&fusce=duis&consequat=bibendum&nulla=morbi&nisl=non&nunc=quam&nisl=nec"
+      },
+      {  
+         "Repository_Name":"aws-samples",
+         "Description":"Sample project to demonstrate usage of the AWS SDK for Java",
+         "Author":"Nevil Cammomile",
+         "Repository_Link":"http://nationalgeographic.com/pede.html?nisl=vitae&ut=mattis&volutpat=nibh&sapien=ligula"
+      }
+   ],
+   "Python":[  
+      {  
+         "Repository_Name":"pdf.js",
+         "Description":"PDF Reader in JavaScript",
+         "Author":"Livy Witton",
+         "Repository_Link":"http://360.cn/mi/sit/amet/lobortis/sapien/sapien/non.jsp?velit=suspendisse&vivamus=accumsan&vel=tortor&nulla=quis&eget=turpis&eros=sed&elementum=ante&pellentesque=vivamus&quisque=tortor&porta=duis&volutpat=mattis&erat=egestas&quisque=metus&erat=aenean&eros=fermentum&viverra=donec&eget=ut&congue=mauris&eget=eget&semper=massa&rutrum=tempor&nulla=convallis&nunc=nulla&purus=neque&phasellus=libero&in=convallis&felis=eget&donec=eleifend&semper=luctus&sapien=ultricies&a=eu&libero=nibh&nam=quisque&dui=id&proin=justo&leo=sit&odio=amet&porttitor=sapien&id=dignissim&consequat=vestibulum&in=vestibulum&consequat=ante&ut=ipsum&nulla=primis&sed=in&accumsan=faucibus&felis=orci&ut=luctus&at=et&dolor=ultrices&quis=posuere&odio=cubilia&consequat=curae&varius=nulla&integer=dapibus&ac=dolor&leo=vel&pellentesque=est&ultrices=donec&mattis=odio&odio=justo&donec=sollicitudin&vitae=ut&nisi=suscipit&nam=a&ultrices=feugiat&libero=et&non=eros&mattis=vestibulum&pulvinar=ac&nulla=est&pede=lacinia&ullamcorper=nisi&augue=venenatis"
+      },
+      {  
+         "Repository_Name":"canvas-from-html",
+         "Description":"Screenshots with JavaScript",
+         "Author":"Ezmeralda Westpfel",
+         "Repository_Link":"http://ocn.ne.jp/morbi/sem/mauris/laoreet/ut.aspx?porttitor=tempus&pede=vel&justo=pede&eu=morbi&massa=porttitor&donec=lorem&dapibus=id&duis=ligula&at=suspendisse&velit=ornare&eu=consequat&est=lectus&congue=in&elementum=est&in=risus&hac=auctor&habitasse=sed&platea=tristique&dictumst=in&morbi=tempus&vestibulum=sit&velit=amet&id=sem&pretium=fusce&iaculis=consequat&diam=nulla&erat=nisl&fermentum=nunc&justo=nisl&nec=duis&condimentum=bibendum&neque=felis&sapien=sed"
+      },
+      {  
+         "Repository_Name":"toastr.js",
+         "Description":"Simple javascript toast notifications",
+         "Author":"Gayleen Byk",
+         "Repository_Link":"http://dell.com/ridiculus/mus/etiam/vel/augue/vestibulum.xml?in=eleifend&sagittis=donec&dui=ut&vel=dolor&nisl=morbi&duis=vel&ac=lectus&nibh=in&fusce=quam&lacus=fringilla&purus=rhoncus&aliquet=mauris&at=enim&feugiat=leo&non=rhoncus&pretium=sed&quis=vestibulum&lectus=sit&suspendisse=amet&potenti=cursus&in=id&eleifend=turpis&quam=integer&a=aliquet&odio=massa&in=id&hac=lobortis&habitasse=convallis&platea=tortor&dictumst=risus&maecenas=dapibus&ut=augue&massa=vel"
+      },
+      {  
+         "Repository_Name":"google-api",
+         "Description":"Google APIs Client Library for JavaScript",
+         "Author":"Town Acres",
+         "Repository_Link":"https://deliciousdays.com/at/turpis/donec/posuere/metus/vitae.json?in=sit&sagittis=amet&dui=erat&vel=nulla&nisl=tempus&duis=vivamus&ac=in&nibh=felis&fusce=eu&lacus=sapien&purus=cursus&aliquet=vestibulum&at=proin&feugiat=eu&non=mi&pretium=nulla&quis=ac&lectus=enim&suspendisse=in&potenti=tempor&in=turpis&eleifend=nec&quam=euismod&a=scelerisque&odio=quam&in=turpis&hac=adipiscing&habitasse=lorem&platea=vitae&dictumst=mattis&maecenas=nibh&ut=ligula&massa=nec&quis=sem&augue=duis&luctus=aliquam&tincidunt=convallis&nulla=nunc&mollis=proin&molestie=at&lorem=turpis&quisque=a&ut=pede&erat=posuere&curabitur=nonummy&gravida=integer&nisi=non&at=velit&nibh=donec&in=diam&hac=neque&habitasse=vestibulum&platea=eget&dictumst=vulputate&aliquam=ut&augue=ultrices&quam=vel&sollicitudin=augue&vitae=vestibulum&consectetuer=ante&eget=ipsum&rutrum=primis&at=in&lorem=faucibus&integer=orci&tincidunt=luctus&ante=et&vel=ultrices&ipsum=posuere&praesent=cubilia&blandit=curae&lacinia=donec"
+      },
+      {  
+         "Repository_Name":"javascriptlibs",
+         "Description":"A collection of browser-side JavaScript libraries, resources",
+         "Author":"Roderic Skipper",
+         "Repository_Link":"https://timesonline.co.uk/in/lacus/curabitur/at/ipsum.js?massa=mi&tempor=nulla&convallis=ac&nulla=enim&neque=in&libero=tempor&convallis=turpis&eget=nec&eleifend=euismod&luctus=scelerisque&ultricies=quam&eu=turpis&nibh=adipiscing&quisque=lorem&id=vitae&justo=mattis&sit=nibh&amet=ligula&sapien=nec&dignissim=sem&vestibulum=duis&vestibulum=aliquam&ante=convallis&ipsum=nunc&primis=proin&in=at&faucibus=turpis&orci=a&luctus=pede&et=posuere&ultrices=nonummy&posuere=integer"
+      }
+   ],
+   "JavaScript":[  
+      {  
+         "Repository_Name":"client-kubernetes",
+         "Description":"Official Python client library for kubernetes",
+         "Author":"Alla Scrowton",
+         "Repository_Link":"https://a8.net/mattis/nibh/ligula/nec.jsp?a=congue&odio=elementum&in=in&hac=hac&habitasse=habitasse&platea=platea&dictumst=dictumst&maecenas=morbi&ut=vestibulum&massa=velit&quis=id&augue=pretium&luctus=iaculis&tincidunt=diam&nulla=erat&mollis=fermentum&molestie=justo&lorem=nec&quisque=condimentum&ut=neque&erat=sapien&curabitur=placerat&gravida=ante&nisi=nulla&at=justo&nibh=aliquam&in=quis&hac=turpis&habitasse=eget&platea=elit&dictumst=sodales&aliquam=scelerisque&augue=mauris&quam=sit&sollicitudin=amet&vitae=eros&consectetuer=suspendisse&eget=accumsan&rutrum=tortor&at=quis&lorem=turpis&integer=sed&tincidunt=ante&ante=vivamus&vel=tortor&ipsum=duis&praesent=mattis&blandit=egestas&lacinia=metus&erat=aenean&vestibulum=fermentum&sed=donec&magna=ut&at=mauris&nunc=eget&commodo=massa&placerat=tempor&praesent=convallis"
+      },
+      {  
+         "Repository_Name":"face-recognition",
+         "Description":"Facial Recognition code using Python",
+         "Author":"Alessandra Mooring",
+         "Repository_Link":"http://blog.com/id/pretium/iaculis/diam/erat/fermentum/justo.json?curae=ut&mauris=erat&viverra=curabitur&diam=gravida&vitae=nisi&quam=at&suspendisse=nibh&potenti=in&nullam=hac&porttitor=habitasse&lacus=platea&at=dictumst&turpis=aliquam&donec=augue&posuere=quam&metus=sollicitudin&vitae=vitae&ipsum=consectetuer&aliquam=eget&non=rutrum&mauris=at&morbi=lorem&non=integer&lectus=tincidunt&aliquam=ante&sit=vel&amet=ipsum&diam=praesent&in=blandit&magna=lacinia&bibendum=erat&imperdiet=vestibulum&nullam=sed&orci=magna&pede=at&venenatis=nunc&non=commodo&sodales=placerat&sed=praesent&tincidunt=blandit&eu=nam&felis=nulla&fusce=integer&posuere=pede&felis=justo&sed=lacinia&lacus=eget&morbi=tincidunt&sem=eget&mauris=tempus&laoreet=vel&ut=pede&rhoncus=morbi&aliquet=porttitor&pulvinar=lorem&sed=id&nisl=ligula&nunc=suspendisse&rhoncus=ornare&dui=consequat&vel=lectus&sem=in&sed=est&sagittis=risus&nam=auctor&congue=sed&risus=tristique&semper=in&porta=tempus&volutpat=sit&quam=amet&pede=sem&lobortis=fusce&ligula=consequat&sit=nulla&amet=nisl&eleifend=nunc&pede=nisl&libero=duis&quis=bibendum&orci=felis&nullam=sed&molestie=interdum&nibh=venenatis&in=turpis&lectus=enim&pellentesque=blandit&at=mi&nulla=in&suspendisse=porttitor&potenti=pede&cras=justo&in=eu"
+      },
+      {  
+         "Repository_Name":"OpenCV-library",
+         "Description":"Oject detection using OpenCV library of python using SIFT features",
+         "Author":"Lilllie Copestick",
+         "Repository_Link":"http://desdev.cn/sapien/non/mi.json?orci=tortor&vehicula=risus&condimentum=dapibus&curabitur=augue&in=vel&libero=accumsan&ut=tellus&massa=nisi&volutpat=eu&convallis=orci&morbi=mauris&odio=lacinia&odio=sapien&elementum=quis&eu=libero&interdum=nullam&eu=sit&tincidunt=amet&in=turpis&leo=elementum&maecenas=ligula&pulvinar=vehicula&lobortis=consequat&est=morbi&phasellus=a&sit=ipsum&amet=integer&erat=a&nulla=nibh&tempus=in&vivamus=quis&in=justo&felis=maecenas&eu=rhoncus&sapien=aliquam&cursus=lacus"
+      },
+      {  
+         "Repository_Name":"scraper.py",
+         "Description":"Webscraping using Python",
+         "Author":"Raff Perrycost",
+         "Repository_Link":"http://sciencedirect.com/turpis/donec/posuere.xml?metus=dui&aenean=proin&fermentum=leo&donec=odio&ut=porttitor&mauris=id&eget=consequat&massa=in&tempor=consequat&convallis=ut&nulla=nulla&neque=sed&libero=accumsan&convallis=felis&eget=ut&eleifend=at&luctus=dolor&ultricies=quis&eu=odio&nibh=consequat&quisque=varius&id=integer&justo=ac&sit=leo&amet=pellentesque&sapien=ultrices&dignissim=mattis&vestibulum=odio&vestibulum=donec&ante=vitae&ipsum=nisi&primis=nam&in=ultrices&faucibus=libero&orci=non&luctus=mattis&et=pulvinar&ultrices=nulla&posuere=pede&cubilia=ullamcorper&curae=augue&nulla=a&dapibus=suscipit&dolor=nulla&vel=elit&est=ac&donec=nulla&odio=sed&justo=vel&sollicitudin=enim&ut=sit&suscipit=amet&a=nunc&feugiat=viverra&et=dapibus&eros=nulla&vestibulum=suscipit&ac=ligula&est=in&lacinia=lacus&nisi=curabitur&venenatis=at&tristique=ipsum&fusce=ac&congue=tellus&diam=semper&id=interdum&ornare=mauris&imperdiet=ullamcorper&sapien=purus&urna=sit&pretium=amet&nisl=nulla&ut=quisque"
+      },
+      {  
+         "Repository_Name":"goose-python",
+         "Description":"Html Content / Article Extractor, web scrapping lib in Python",
+         "Author":"Herrick Goulborn",
+         "Repository_Link":"https://smugmug.com/curae/mauris.png?dictumst=leo&morbi=pellentesque&vestibulum=ultrices&velit=mattis&id=odio"
+      }
+   ]
+}
