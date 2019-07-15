@@ -8,7 +8,7 @@ Situations like these lead to an impasse, thus slowing the progress of the proce
 
 Our portal starts with a landing page where the user can select the language/tag he is interested in. Additionally, there is a search bar through which the user can filter the languages available in the portal and hit the search button to access all the features of the portal. Below is the image of the Homepage of the portal.
 
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/HomePage.PNG?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/HomePage.PNG)
 
 ## Top StackOverflow users with Visualizations
 
@@ -29,7 +29,7 @@ There are three charts displayed on the portal:
 #### Chart 1
 The below chart has the Users on the X-Axis and response time on the Y-Axis and it shows how responsive the users are having a lower response time means that a particular user is more active.
 </br>
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/chart1.PNG?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/chart1.PNG)
 
 
 
@@ -37,13 +37,13 @@ The below chart has the Users on the X-Axis and response time on the Y-Axis and 
 #### Chart 2
 The below chart has the Users on the X-Axis and the cumulative score on the Y-Axis and it is a histogram chart where the cumulative score is calculated from the formula explained above.
 </br>
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/chart2.PNG?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/chart2.PNG)
 
 
 #### Chart 3
 The below chart gives a monthly report of the users against the cumulative score. This chart helps in giving an overview of the performance of different users on StackOverflow for a particular language.
 </br>
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/chart3.PNG?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/chart3.PNG)
 
 
 
@@ -73,7 +73,7 @@ This data is completely dynamic and ingested and updated on the portal as soon a
 
 Screenshot of the trending GitHub repositories displayed on the portal.
 </br>
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/Github_Trending.PNG?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/Github_Trending.PNG)
 
 ## Email Subscription for Trending Questions
 
@@ -84,11 +84,11 @@ This feature aims at providing the users with a list of trending questions for t
 
 - Image of the landing page for the email subscription.
 
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/Email_Subscribe.PNG?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/Email_Subscribe.PNG)
 
 - Image of the email received with the list of trending questions.
 
-![alt text](https://github.ncsu.edu/pmshah/csc510-project/blob/master/Trending_email.png?raw=true)
+![alt text](https://github.com/VasviDesai/StackAnalytica/blob/master/Trending_email.png)
 
 # Reflection
 - Overall, the project left us with a more detailed and practical knowledge of Agile methodology. Initially, we didn't have much idea but later we found it very helpful to keep track of all the tasks we had divided. Sprint Retrospectives were helpful to know all the hindrances we faced and plan accordingly for the future.
