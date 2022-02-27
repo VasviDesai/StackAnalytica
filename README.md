@@ -1,5 +1,8 @@
 # StackAnalytica
-A web tool that provides for a problem tag (eg java, javascript) an integrated view of StackOverflow Users and Github repositories.
+A web tool that when provided with a problem tag (eg java, javascript) an integrated view of StackOverflow Users and Github repositories. This helps them get a list of top StackOverflow users related to that particular tag and also the top GitHub repositories.
+The portal works on dynamic data, and live data will be fetched from StackOverflow and GitHub.
+[Link to the live portal](http://stackanalytica-csc510.herokuapp.com/)
+
 CSC 510-Project
 
 Team: <br/>
